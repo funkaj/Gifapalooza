@@ -1,6 +1,11 @@
+body {
+  background: rgb(245, 242, 242);
+}
+
 button,
 div,
 form,
 input {
   margin: 10px;
 }
+
