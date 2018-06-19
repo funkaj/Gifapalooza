@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>giftastic</title>
+    <title>Gifapalooza</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
@@ -22,11 +22,35 @@
 </head>
 
 <body>
+        <header id='masthead'>
+                <div class="container">
+                  <nav class="navbar navbar-expand-sm navbar-light">
+                    <a class="navbar-brand" id='logo' href="index.html">Adam Funk</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                      aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html" style='border-left: 0px;'>About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+              </header>
     <div class="container">
-        <h1>Gif Search</h1>
-
-        <div id="gifs-button"></div>
-      
+        <h1>Gifapalooza!</h1>
+        <div class='container'>
+        <div id="gifs-button" class='row'></div>
+    </div>
         <form id="gif-form">
             <label for="gif-input">Add a Gif</label>
             <input type="text" id="gif-input">
@@ -36,11 +60,11 @@
             <input id="add-gif" type="submit" value="Add a Gif">
         </form>
 
-      <!-- Gifs will get dumped here -->
-      <div class='conatiner'>
-      <div id="gifs-view" class= 'row'></div>
-    </div>
-        
+        <!-- Gifs will get dumped here -->
+        <div class='conatiner'>
+            <div id="gifs-view" class='row'></div>
+        </div>
+
 </body>
 
 </html>
