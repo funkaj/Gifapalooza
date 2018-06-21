@@ -1,7 +1,12 @@
 body {
   background: rgb(245, 242, 242);
 }
-
+ p{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 18px;
+   margin-top: 8px;
+   margin-bottom: 2px;
+ }
 .header{
   display: flex;
   justify-content: center;
