@@ -47,19 +47,24 @@
                 </div>
               </header>
     <div class="container">
+      <div class='header'>
         <h1>Gifapalooza!</h1>
+      </div>
         <div class='container'>
+          <div class='selectGif'>
         <div id="gifs-button" class='row'></div>
     </div>
+  </div>
+  <div class='container'>
+    <div class='row add-gif'>
         <form id="gif-form">
-            <label for="gif-input">Add a Gif</label>
-            <input type="text" id="gif-input">
-            <br>
-
-            <!-- Button triggers new movie to be added -->
-            <input id="add-gif" type="submit" value="Add a Gif">
+            <!-- Button triggers new gif button to be appended -->
+            <input id="add-gif" class='col-3' type="submit" value="Add a Gif">
+            <input type="text" id="gif-input" class='col-8'>
+            <br> 
         </form>
-
+      </div>
+    </div>
         <!-- Gifs will get dumped here -->
         <div class='conatiner'>
             <div id="gifs-view" class='row'></div>

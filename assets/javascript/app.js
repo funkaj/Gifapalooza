@@ -11,10 +11,10 @@ $(document).ready(function () {
 
         for (var i = 0; i < searchGifs.length; i++) {
             var a = $("<button>");
-            a.addClass("gif-button col-4");
+            a.addClass("gif-button");
             a.attr("data-name", searchGifs[i]);
             a.text(searchGifs[i]);
-            $("#gifs-button").prepend(a);
+            $("#gifs-button").append(a);
         }
     }
     //add string user entered to userInput array and append new button to the screen
@@ -24,7 +24,7 @@ $(document).ready(function () {
         var userInput = $("#gif-input").val().trim();
         searchGifs.push(userInput);
         renderButtons();
-
+        $("#gif-input").val("");
     });
 
     renderButtons();
