@@ -1,5 +1,50 @@
 body {
-  background: rgb(245, 242, 242);
+  background: rgb(250, 250, 250);
+}
+/* ----navbar---- */
+#masthead {
+  position: static;
+  z-index: 99;
+  width: 100%;
+  overflow: auto;
+  color: rgb(41, 37, 37);
+  background-color: rgb(141, 141, 141);
+}
+
+#navbarNav {
+  justify-content: flex-end;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(41, 37, 37);
+}
+
+.navbar {
+  padding: 0px;
+}
+
+nav a {
+  display: inline-block;
+  margin-left: 15px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+#logo {
+  float: left;
+  height: 50px;
+  font-family: atomic age, Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  -webkit-text-stroke-width: .1px;
+  -webkit-text-stroke-color: rgb(177, 177, 177);
+  margin-left: 0px;
+}
+/* ----body---- */
+.row{
+  justify-content: center;
 }
  p{
    font-family: 'Times New Roman', Times, serif;
@@ -15,7 +60,6 @@ body {
   border-radius: 10px;
   min-height: 80px;
   text-align: center;
-
 }
 .header h1 {
   font-size: 2rem;
@@ -23,7 +67,21 @@ body {
 .selectGif {
   display: flex;
   justify-content: center;
-
+}
+.add-gif{
+  display: flex;
+  justify-content: center;
+  
+}
+#add-ten {
+ 
+  margin-left:5px;
+  min-width: 150px;
+}
+#reset {
+  margin-left:1px;
+  min-width: 150px;
+ 
 }
 .gif-button {
   min-width: 150px;
@@ -36,13 +94,16 @@ input {
   font-size: 13px;
 }
 #add-gif {
+  margin-left: 8px;
   padding-left: 7px;
 }
 #gif-input {
-  min-width: 216px;
+  min-width: 210px;
 }
-
 .gif {
   min-width: 95%;
+  border: 6px solid rgb(155, 154, 154);
 }
-
+.view {
+  justify-content: center;
+}

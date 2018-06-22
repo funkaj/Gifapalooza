@@ -20,7 +20,6 @@ $(document).ready(function () {
     }
     //add string user entered to userInput array and append new button to the screen
     $("#add-gif").on("click", function (event) {
-
         event.preventDefault();
         var userInput = $("#gif-input").val().trim();
         searchGifs.push(userInput);
@@ -68,7 +67,7 @@ $(document).ready(function () {
                 for (i = 0; i < results.length; i++) {
                     if (results[i].rating !== 'R') {
                         //let download = $("<button>");
-                        let gifDiv = $('<div class="view col-12">')//create new divs with grid
+                        let gifDiv = $('<div class="view col-12 col-md-5">')//create new divs with grid
                         let animated = results[i].images.fixed_width.url //assign gif to a varible
                         let still = results[i].images.fixed_width_still.url //assign still to a varible
                         let p = $('<p>').text('Rating: ' + results[i].rating) //create and assign the Rating to a <p>
