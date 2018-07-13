@@ -1,9 +1,6 @@
-# Gifaplooza
+# [Gifapalooza](https://funkaj.github.io/Gifapalooza/)
 Web page that searches the Giphy API for user queryed gif. 
 Built for practice using API in web development.
-
-## Try it here
-https://funkaj.github.io/Gifapalooza/
 
 ## Built with/using
 * Bootstrap
@@ -18,3 +15,7 @@ https://funkaj.github.io/Gifapalooza/
 ## API
 Giphy - https://developers.giphy.com/
 
+## Author
+* **Adam Funk** 
+* [Github](https://github.com/funkaj)
+* [LinkedIn](https://www.linkedin.com/feed/)
