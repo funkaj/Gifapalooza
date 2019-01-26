@@ -46,12 +46,12 @@ nav a {
 .row{
   justify-content: center;
 }
- p{
-   font-family: 'Times New Roman', Times, serif;
-   font-size: 18px;
-   margin-top: 8px;
-   margin-bottom: 2px;
- }
+p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 2px;
+}
 .header{
   display: flex;
   justify-content: center;
@@ -74,14 +74,12 @@ nav a {
   
 }
 #add-ten {
- 
   margin-left:5px;
   min-width: 150px;
 }
 #reset {
   margin-left:1px;
   min-width: 150px;
- 
 }
 .gif-button {
   min-width: 150px;
