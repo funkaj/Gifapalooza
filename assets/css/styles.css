@@ -46,12 +46,14 @@ nav a {
 .row{
   justify-content: center;
 }
+
 p{
   font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
   margin-top: 8px;
   margin-bottom: 2px;
 }
+
 .header{
   display: flex;
   justify-content: center;
@@ -61,29 +63,36 @@ p{
   min-height: 80px;
   text-align: center;
 }
+
 .header h1 {
   font-size: 2rem;
 }
+
 .selectGif {
   display: flex;
   justify-content: center;
 }
+
 .add-gif{
   display: flex;
   justify-content: center;
   
 }
+
 #add-ten {
   margin-left:5px;
   min-width: 150px;
 }
+
 #reset {
   margin-left:1px;
   min-width: 150px;
 }
+
 .gif-button {
   min-width: 150px;
 }
+
 button,
 div,
 form,
@@ -91,17 +100,21 @@ input {
   margin: 5px;
   font-size: 13px;
 }
+
 #add-gif {
   margin-left: 8px;
   padding-left: 7px;
 }
+
 #gif-input {
   min-width: 210px;
 }
+
 .gif {
   min-width: 95%;
   border: 6px solid rgb(155, 154, 154);
 }
+
 .view {
   justify-content: center;
 }

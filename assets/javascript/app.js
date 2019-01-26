@@ -46,27 +46,27 @@ $(document).ready(function () {
     });
 
     renderButtons();
-    
+
     // get gifs and append to screen
     function displayImage() {
         lastClick = [];
-        $("#gifs-view").empty();//empty divs of previous gifs
+        $("#gifs-view").empty(); //empty divs of previous gifs
         const newGif = $(this).attr('data-name');
         const queryURL = `https://api.giphy.com/v1/gifs/search?q=${newGif}&api_key=qwdsORm6eCZFU7evcJceLJPt51ve5HC5&limit=${ten}`;
         lastClick.push($(this).attr('data-name'));
-    
+
         //search Gipphy API for matching gifs
         $.ajax({
-            url: queryURL,
-            method: "GET"
-        })
+                url: queryURL,
+                method: "GET"
+            })
             .then(function (response) {
                 const results = response.data;
 
                 //loop through gifs and place in new divs
                 for (i = 0; i < results.length; i++) {
                     if (results[i].rating !== 'R') {
-                        const gifDiv = $('<div class="view col-12 col-md-5">');//create new divs with grid
+                        const gifDiv = $('<div class="view col-12 col-md-5">'); //create new divs with grid
                         const animated = results[i].images.fixed_width.url; //assign gif to a varible
                         const still = results[i].images.fixed_width_still.url; //assign still to a varible
                         const p = $('<p>').text('Rating: ' + results[i].rating); //create and assign the Rating to a <p>
@@ -80,15 +80,16 @@ $(document).ready(function () {
                         //prepend rating and gif
                         gifDiv.append(t, d, p);
                         gifDiv.prepend(gifImage);
-                        $("#gifs-view").prepend(gifDiv);//prepend gif to page
+                        $("#gifs-view").prepend(gifDiv); //prepend gif to page
                     };
                 };
             });
     };
 
-    $(document).on("click", ".gif-button", displayImage);//call displayImage function
+    $(document).on("click", ".gif-button", displayImage); //call displayImage function
 
-    $(document).on('click', '.gif', playPause);//call playPause function
+    $(document).on('click', '.gif', playPause); //call playPause function
+
     //play or pause gif on click
     function playPause() {
         //assign varible to 'data-state
@@ -101,6 +102,5 @@ $(document).ready(function () {
             $(this).attr("src", $(this).attr("data-still"));
             $(this).attr("data-state", "still");
         };
-    }
-
-})
+    };
+});
